@@ -28,6 +28,29 @@ export default function EditarPerfil() {
         );
     }
 
+    function fnRequisitosSenha() {
+        const tem8Caracteres = senha.length >= 8;
+        const temNumero = /[0-9]/.test(senha);
+        const temEspecial = /[^A-Za-z0-9]/.test(senha);
+
+        if (!tem8Caracteres || !temNumero || !temEspecial) {
+            Alert.alert(
+                "Senha inválida",
+                "Sua senha deve conter ao menos 8 caracteres, um número e um caractere especial",
+                [
+                    {
+                        text: "Ok",
+                        style: "cancel",
+                    }
+                ]
+            );
+
+            return false;
+        }
+
+        return true;
+    }
+
     const escolherImagem = async () => {
         const { status } =
             await ImagePicker.requestMediaLibraryPermissionsAsync();
