@@ -23,10 +23,11 @@ export default function Home() {
         ]
       );
     }
-    else if (senha.trim().length < 8) {
+    else if ( senha.trim().length < 8 || !/[0-9]/.test(senha) || !/[^A-Za-z0-9]/.test(senha)
+    ) {
       Alert.alert(
-        "Senha muito curta",
-        "Sua senha deve conter ao menos 8 caracteres.",
+        "Senha inválida",
+        "Sua senha deve conter ao menos 8 caracteres, um número e um caractere especial",
         [
           {
             text: "Ok",
