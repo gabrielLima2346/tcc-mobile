@@ -308,7 +308,7 @@ export default function Mercados() {
             </Svg>
 
             {/* endereço atual */}
-            <Text style={{ position: 'absolute', top: 325, width: 410, textAlign: 'center' }}>
+            <Text style={{ position: 'absolute', top: 345, x: 0, width: 410, textAlign: 'center' }}>
                 {endereco.street + ', ' + endereco.streetNumber + ' - ' + endereco.district + ', ' + endereco.city + ' - ' + endereco.region + ', ' + endereco.postalCode}
             </Text>
 
