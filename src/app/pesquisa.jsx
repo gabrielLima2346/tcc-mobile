@@ -156,7 +156,7 @@ export default function Pesquisa() {
                     // equivalente a: x-50 (para o placeholder ficar à esqueda)
                     left: 65,
                     // equivalente a: y
-                    top: 225,
+                    top: 237,
                     // equivalente a: width
                     width: 603,
                     // equivalente a: height
@@ -176,7 +176,7 @@ export default function Pesquisa() {
             <View
                 style={{
                     position: "absolute",
-                    top: 330,
+                    top: 340,
                     left: 65,
                     right: 65,
                 }}
